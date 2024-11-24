@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #header {
+            height: 15vh;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            position: fixed;
+            display: flex;
+        }
+
+        .option {
+            color: rgb(20, 20, 136);
+            margin-left: 15px;
+            text-align: right;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #header2 {
+            height: 10vh;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+
+        #page1 {
+            height: 100vh;
+            width: 100%;
+            /* background-color: rgb(191, 129, 129); */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #textbox {
+            /* background-color: aqua; */
+            height: 70%;
+            width: 50%;
+            margin-top: 80px;
+        }
+
+        #textbox h1 {
+            font-size: 55px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #textbox h3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin: 0%;
+            padding: 0px;
+        }
+
+        #textbox p {
+            font-size: 20px;
+            margin: 0;
+            padding: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        #bgpic {
+
+            height: 70%;
+            width: 45%;
+            margin-top: 80px;
+        }
+
+        #bgpic img {
+            width: 95%;
+            height: 70%;
+            /* object-fit: cover; */
+            padding: 10px;
+        }
+
+        #page2 {
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(86, 124, 78);
+        }
+
+        #logo {
+            height: 100%;
+            margin: 5px;
+            margin-left: 5%;
+        }
+
+        #logo img {
+            width: 200%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        #menu {
+            display: flex;
+            gap: 50px;
+            margin-left: auto;
+            height: 100%;
+            font-size: 1.3rem;
+            line-height: 2;
+        }
+
+        .option:hover {
+            color: rgb(111, 37, 110);
+            transform: scale(1.2);
+            border-radius: 3px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"><img src="logo.png" alt="logo Image">
+        </div>
+        <div id="menu">
+            <div class="option">
+                <p><b>Notes</b></p>
+            </div>
+            <div class="option">
+                <p><b>About</b></p>
+            </div>
+            <div class="option">
+                <p><b>Contacts</b></p>
+            </div>
+            <div class="option"></div>
+        </div>
+    </div>
+    <div id="header2"></div>
+    <div id="page1">
+        <div id="textbox">
+            <h1><big>Welcome to Notes Nexus</big></h1>
+            <h3><big>Are you from <a href="https://www.jisuniversity.ac.in/">JIS University</a> CSE Department?</big>
+            </h3>
+            <p>
+                Confused on where i can get my dept. notes?<br>
+                We have got you covered. <br>
+                Browse here and find out the notes for you. <br>
+                Its free! Notes Nexus is here to help you.
+            </p>
+        </div>
+        <div id="bgpic"><img src="jis.png" alt="logo Image"></div>
+    </div>
+    <div id="page2"></div>
+</body>
+
+</html>
